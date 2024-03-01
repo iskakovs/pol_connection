@@ -2,6 +2,6 @@
 install.packages("stargazer")
 library(stargazer)
 
-# Install and load the writexl package
+# Install and load the writexl package 
 install.packages("writexl")
 library(writexl)
