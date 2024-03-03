@@ -27,3 +27,6 @@ model <- lm(size_code ~ age + region + ind_code + pol, data = data)
 
 # Step 4: Check the results
 summary(model)
+
+# Create the table using stargazer
+stargazer(model, type = "text", out = "table.txt")
