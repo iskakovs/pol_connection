@@ -18,6 +18,6 @@ data$reg_date <- as.Date(data$reg_date, format = "%d.%m.%Y")
 # Calculate company age
 data$age <- as.numeric(format(Sys.Date(), "%Y")) - data$year
 
-# Convert region and ind_code to factors 
+# Convert region and ind_code to factors
 data$region <- as.factor(data$region)
 data$ind_code <- as.factor(data$ind_code)
