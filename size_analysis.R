@@ -15,5 +15,5 @@ data <- read_excel("...\\pol_data.xlsx", sheet = "data")
 # Convert reg_date to Date format 
 data$reg_date <- as.Date(data$reg_date, format = "%d.%m.%Y")
 
-# Calculate company age
+# Calculate company age 
 data$age <- as.numeric(format(Sys.Date(), "%Y")) - data$year
