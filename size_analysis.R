@@ -24,3 +24,6 @@ data$ind_code <- as.factor(data$ind_code)
 
 # Step 3: Run the regression
 model <- lm(size_code ~ age + region + ind_code + pol, data = data)
+
+# Step 4: Check the results
+summary(model)
