@@ -22,5 +22,5 @@ data$age <- as.numeric(format(Sys.Date(), "%Y")) - data$year
 data$region <- as.factor(data$region)
 data$ind_code <- as.factor(data$ind_code)
 
-# Step 3: Run the regression
+# Step 3: Run the regression 
 model <- lm(size_code ~ age + region + ind_code + pol, data = data)
