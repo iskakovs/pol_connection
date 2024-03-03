@@ -40,5 +40,5 @@ coefficients <- coef(summary(model))
 # Convert to data frame 
 coefficients_df <- as.data.frame(coefficients)
 
-# Export the coefficients to Excel format
+# Export the coefficients to Excel format 
 write_xlsx(coefficients_df, path = "table.xlsx")
