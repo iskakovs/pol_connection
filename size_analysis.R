@@ -34,5 +34,5 @@ stargazer(model, type = "text", out = "table.txt")
 # Export the table to CSV format 
 write.csv(summary(model), file = "table.csv", row.names = TRUE)
 
-# Extract coefficients from the model summary
+# Extract coefficients from the model summary 
 coefficients <- coef(summary(model))
