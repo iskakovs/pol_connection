@@ -12,5 +12,5 @@ library(readxl)
 data <- read_excel("...\\pol_data.xlsx", sheet = "data")
 
 # Step 2: Prepare the data
-# Convert reg_date to Date format
+# Convert reg_date to Date format 
 data$reg_date <- as.Date(data$reg_date, format = "%d.%m.%Y")
