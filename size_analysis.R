@@ -37,5 +37,5 @@ write.csv(summary(model), file = "table.csv", row.names = TRUE)
 # Extract coefficients from the model summary 
 coefficients <- coef(summary(model))
 
-# Convert to data frame
+# Convert to data frame 
 coefficients_df <- as.data.frame(coefficients)
