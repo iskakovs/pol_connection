@@ -31,5 +31,5 @@ summary(model)
 # Create the table using stargazer
 stargazer(model, type = "text", out = "table.txt")
 
-# Export the table to CSV format
+# Export the table to CSV format 
 write.csv(summary(model), file = "table.csv", row.names = TRUE)
