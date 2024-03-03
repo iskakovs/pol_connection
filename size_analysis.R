@@ -30,3 +30,4 @@ summary(model)
 
 # Create the table using stargazer
 stargazer(model, type = "text", out = "table.txt")
+
