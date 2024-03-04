@@ -2,3 +2,5 @@
 library(readxl)
 library(plm)
 library(stargazer)
+
+pol_data <- read_excel("...pol_data2.xlsx", sheet = "data")
