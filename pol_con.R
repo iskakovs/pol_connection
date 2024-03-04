@@ -11,3 +11,5 @@ pol_data_pol_1 <- pol_data[pol_data$pol == 1, ]
 
 # Summary statistics for numeric variables
 summary_stats_numeric <- summary(pol_data_pol_1)
+
+# Frequency counts for categorical variables
