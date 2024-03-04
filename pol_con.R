@@ -14,3 +14,5 @@ summary_stats_numeric <- summary(pol_data_pol_1)
 
 # Frequency counts for categorical variables
 summary_stats_categorical <- lapply(pol_data_pol_1, table)
+
+# Convert list of frequency counts to data frame
