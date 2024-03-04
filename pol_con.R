@@ -16,3 +16,4 @@ summary_stats_numeric <- summary(pol_data_pol_1)
 summary_stats_categorical <- lapply(pol_data_pol_1, table)
 
 # Convert list of frequency counts to data frame
+summary_stats_categorical_df
