@@ -20,4 +20,4 @@ summary_stats_categorical_df <- as.data.frame(do.call(cbind, summary_stats_categ
 
 # Make sure the number of rows match
 min_rows <- min(nrow(summary_stats_numeric), nrow(summary_stats_categorical_df))
-summary_stats_numeric 
+summary_stats_numeric <- summary_stats_numeric[1:min_rows, ]
