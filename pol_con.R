@@ -17,3 +17,5 @@ summary_stats_categorical <- lapply(pol_data_pol_1, table)
 
 # Convert list of frequency counts to data frame
 summary_stats_categorical_df <- as.data.frame(do.call(cbind, summary_stats_categorical))
+
+# Make sure the number of rows match
