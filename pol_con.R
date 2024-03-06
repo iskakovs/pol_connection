@@ -25,3 +25,5 @@ summary_stats_categorical_df <- summary_stats_categorical_df[1:min_rows, ]
 
 # Create summary statistics table
 summary_table <- cbind(summary_stats_numeric, summary_stats_categorical_df, check.names = FALSE)
+
+# Print summary table
