@@ -45,3 +45,4 @@ epsilon <- 1e-10  # Small constant to add to avoid taking logarithm of zero
 pol_data[tax_cols][pol_data[tax_cols] == 0] <- epsilon
 
 # Convert ind_code to a factor
+pol_data$ind_code <- as.factor(pol_data$ind_code)
