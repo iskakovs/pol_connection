@@ -28,3 +28,6 @@ summary_table <- cbind(summary_stats_numeric, summary_stats_categorical_df, chec
 
 # Print summary table
 print(summary_table)
+
+install.packages("openxlsx")
+library(openxlsx)
