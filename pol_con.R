@@ -33,3 +33,4 @@ install.packages("openxlsx")
 library(openxlsx)
 
 # Save summary table as Excel file
+write.xlsx(summary_table, "summary_statistics_pol_1.xlsx")
