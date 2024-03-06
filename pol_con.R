@@ -39,3 +39,5 @@ write.xlsx(summary_table, "summary_statistics_pol_1.xlsx")
 # Convert tax variables to numeric
 tax_cols <- c("tax2019", "tax2020", "tax2021", "tax2022", "tax2023")
 pol_data[tax_cols] <- lapply(pol_data[tax_cols], as.numeric)
+
+# Handle zero values in tax variables
