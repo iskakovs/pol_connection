@@ -31,3 +31,5 @@ print(summary_table)
 
 install.packages("openxlsx")
 library(openxlsx)
+
+# Save summary table as Excel file
