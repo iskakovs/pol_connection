@@ -34,3 +34,7 @@ library(openxlsx)
 
 # Save summary table as Excel file
 write.xlsx(summary_table, "summary_statistics_pol_1.xlsx")
+
+############ Log of Taxes Paid and Political Connection Regression ###########
+# Convert tax variables to numeric
+tax_cols <- c("tax2019", "tax2020", "tax2021", "tax2022", "tax2023")
