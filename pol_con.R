@@ -56,3 +56,6 @@ model2023 <- lm(log_tax2023 ~ age + pol + ind_code + size_code, data = pol_data)
 
 # Print the summary of the model
 summary(model2023)
+
+# Create the table using stargazer
+stargazer(model2023, type = "text", out = "table2023.txt")
