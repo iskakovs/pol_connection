@@ -46,3 +46,6 @@ pol_data[tax_cols][pol_data[tax_cols] == 0] <- epsilon
 
 # Convert ind_code to a factor
 pol_data$ind_code <- as.factor(pol_data$ind_code)
+
+# Compute logarithm of taxes paid
+log_tax_cols <- paste0("log_", tax_cols)
