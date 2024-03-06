@@ -50,3 +50,5 @@ pol_data$ind_code <- as.factor(pol_data$ind_code)
 # Compute logarithm of taxes paid
 log_tax_cols <- paste0("log_", tax_cols)
 pol_data[log_tax_cols] <- log(pol_data[tax_cols])
+
+# Run the regression to check how political connection contributed to firm's performance in 2023
