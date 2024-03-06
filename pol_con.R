@@ -43,3 +43,5 @@ pol_data[tax_cols] <- lapply(pol_data[tax_cols], as.numeric)
 # Handle zero values in tax variables
 epsilon <- 1e-10  # Small constant to add to avoid taking logarithm of zero
 pol_data[tax_cols][pol_data[tax_cols] == 0] <- epsilon
+
+# Convert ind_code to a factor
