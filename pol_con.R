@@ -53,3 +53,6 @@ pol_data[log_tax_cols] <- log(pol_data[tax_cols])
 
 # Run the regression to check how political connection contributed to firm's performance in 2023
 model2023 <- lm(log_tax2023 ~ age + pol + ind_code + size_code, data = pol_data)
+
+# Print the summary of the model
+summary(model2023)
