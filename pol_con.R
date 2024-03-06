@@ -41,3 +41,4 @@ tax_cols <- c("tax2019", "tax2020", "tax2021", "tax2022", "tax2023")
 pol_data[tax_cols] <- lapply(pol_data[tax_cols], as.numeric)
 
 # Handle zero values in tax variables
+epsilon <- 1e-10  # Small constant to add to avoid taking logarithm of zero
