@@ -113,3 +113,6 @@ fe_model <- plm(log_tax_paid ~ region + pol + age + ind_code + size_code,
 # Random Effects Model
 re_model <- plm(log_tax_paid ~ region + pol + age + ind_code + size_code, 
                 data = melted_data, index = c("firm_id", "year"), model = "random")
+
+# Compare FE and RE models using Hausman test
+hausman_test <- phtest(fe_model, re_model)
