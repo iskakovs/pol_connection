@@ -62,3 +62,6 @@ stargazer(model2023, type = "text", out = "table2023.txt")
 
 # Run the regression to check how political connection contributed to the Covid-19 resistance
 model2020 <- lm(log_tax2020 ~ age + pol + ind_code + size_code, data = pol_data)
+
+# Print the summary of the model
+summary(model2020)
