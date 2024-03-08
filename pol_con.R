@@ -102,3 +102,6 @@ melted_data$firm_id <- paste0(melted_data$region, "-", melted_data$ind_code, "-"
 
 # Using assignment operator
 melted_data$log_tax_paid[is.na(melted_data$log_tax_paid)] <- 0
+
+#OLS Model
+ols_model <- lm(log_tax_paid ~ region + pol + age + ind_code + size_code, data = melted_data)
