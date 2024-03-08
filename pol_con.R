@@ -99,3 +99,6 @@ library(plm)
 # Let's balance the data
 # Create a unique firm identifier
 melted_data$firm_id <- paste0(melted_data$region, "-", melted_data$ind_code, "-", melted_data$size_code)
+
+# Using assignment operator
+melted_data$log_tax_paid[is.na(melted_data$log_tax_paid)] <- 0
