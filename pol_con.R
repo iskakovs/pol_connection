@@ -86,3 +86,4 @@ melted_data$year <- as.numeric(gsub("tax", "", melted_data$year))
 
 # Add a small constant to tax_paid to avoid zero and negative values
 epsilon <- 1e-10
+melted_data$tax_paid_pos <- melted_data$tax_paid + epsilon
