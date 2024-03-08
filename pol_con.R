@@ -90,3 +90,5 @@ melted_data$tax_paid_pos <- melted_data$tax_paid + epsilon
 
 # Convert tax_paid to logged variable
 melted_data$log_tax_paid <- log(melted_data$tax_paid_pos)
+
+# Now 'melted_data' contains the logged tax_paid variable
