@@ -92,3 +92,6 @@ melted_data$tax_paid_pos <- melted_data$tax_paid + epsilon
 melted_data$log_tax_paid <- log(melted_data$tax_paid_pos)
 
 # Now 'melted_data' contains the logged tax_paid variable
+
+# Load necessary packages
+library(plm)
