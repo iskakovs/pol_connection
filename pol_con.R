@@ -105,3 +105,7 @@ melted_data$log_tax_paid[is.na(melted_data$log_tax_paid)] <- 0
 
 #OLS Model
 ols_model <- lm(log_tax_paid ~ region + pol + age + ind_code + size_code, data = melted_data)
+
+# Fixed Effects Model
+fe_model <- plm(log_tax_paid ~ region + pol + age + ind_code + size_code, 
+                data = melted_data, index = c("firm_id", "year"), model = "within")
