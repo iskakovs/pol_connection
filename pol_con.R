@@ -82,4 +82,4 @@ melted_data <- melt(pol_data, id.vars = id_vars,
 # Convert year to numeric
 melted_data$year <- as.numeric(gsub("tax", "", melted_data$year))
 
-# Now 'melted_data' contains the dataset in long format 
+# Now 'melted_data' contains the dataset in long format suitable for panel data analysis
