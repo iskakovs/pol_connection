@@ -95,3 +95,5 @@ melted_data$log_tax_paid <- log(melted_data$tax_paid_pos)
 
 # Load necessary packages
 library(plm)
+
+# Let's balance the data
