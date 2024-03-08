@@ -78,3 +78,6 @@ id_vars <- c("region", "pol", "age", "ind_code", "size_code")
 melted_data <- melt(pol_data, id.vars = id_vars, 
                     variable.name = "year", value.name = "tax_paid" 
                     measure.vars = c("tax2019", "tax2020", "tax2021", "tax2022", "tax2023"))
+
+# Convert year to numeric
+melted_data$year <- as.numeric(gsub("tax", "", melted_data$year))
