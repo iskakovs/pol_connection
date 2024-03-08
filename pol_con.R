@@ -59,3 +59,6 @@ summary(model2023)
 
 # Create the table using stargazer
 stargazer(model2023, type = "text", out = "table2023.txt")
+
+# Run the regression to check how political connection contributed to the Covid-19 resistance
+model2020 
