@@ -109,3 +109,7 @@ ols_model <- lm(log_tax_paid ~ region + pol + age + ind_code + size_code, data =
 # Fixed Effects Model
 fe_model <- plm(log_tax_paid ~ region + pol + age + ind_code + size_code, 
                 data = melted_data, index = c("firm_id", "year"), model = "within")
+
+# Random Effects Model
+re_model <- plm(log_tax_paid ~ region + pol + age + ind_code + size_code, 
+                data = melted_data, index = c("firm_id", "year"), model = "random")
