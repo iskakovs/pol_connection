@@ -70,3 +70,6 @@ summary(model2020)
 
 # Load necessary packages
 library(reshape2)
+
+# Define ID variables (variables that remain unchanged during reshaping)
+id_vars <- c("region", "pol", "age", "ind_code", "size_code")
