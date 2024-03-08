@@ -73,3 +73,8 @@ library(reshape2)
 
 # Define ID variables (variables that remain unchanged during reshaping)
 id_vars <- c("region", "pol", "age", "ind_code", "size_code")
+
+# Melt the dataset to long format
+melted_data <- melt(pol_data, id.vars = id_vars, 
+                    variable.name = "year", value.name = "tax_paid" 
+                    )
