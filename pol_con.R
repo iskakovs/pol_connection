@@ -65,3 +65,8 @@ model2020 <- lm(log_tax2020 ~ age + pol + ind_code + size_code, data = pol_data)
 
 # Print the summary of the model
 summary(model2020)
+
+### Next analysis - PANEL DATA analysis
+
+# Load necessary packages
+library(reshape2)
