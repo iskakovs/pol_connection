@@ -120,3 +120,4 @@ hausman_test <- phtest(fe_model, re_model)
 # Print results
 summary(ols_model)
 summary(fe_model)
+summary(re_model)
