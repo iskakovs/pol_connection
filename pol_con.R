@@ -116,3 +116,6 @@ re_model <- plm(log_tax_paid ~ region + pol + age + ind_code + size_code,
 
 # Compare FE and RE models using Hausman test
 hausman_test <- phtest(fe_model, re_model)
+
+# Print results
+summary(ols_model)
