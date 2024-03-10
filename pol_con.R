@@ -122,3 +122,6 @@ summary(ols_model)
 summary(fe_model)
 summary(re_model)
 print(hausman_test)
+
+# Print out the summary table using stargazer
+stargazer(ols_model, fe_model, re_model, type = "text", out = "three_models.txt")
